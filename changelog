@@ -1,0 +1,16 @@
+12/7/2016 
+
+After matchmaking, we need to minimize the launcher to the taskbar and then open game.exe to the remote server.
+e.g. launching a unity app with game.exe -serveraddress www.example.com
+
+    Executing and Passing Arguments    
+            import System.Diagnostics;
+            var stringPath = "../"; var myProcess = new Process(); 
+            myProcess.StartInfo.FileName = "Notepad.exe"; 
+            myProcess.StartInfo.Arguments = stringPath; 
+            myProcess.Start();
+
+    Reading Arguments
+            string[] arguments = Environment.GetCommandLineArgs();  
+            string firstArguemt = arguments[1];
+
